@@ -1,0 +1,20 @@
+# generated artifacts
+results/
+data/
+*.npz
+*.h5
+*.hdf5
+*.pt
+*.ckpt
+wandb/
+
+.vscode/
+
+# environment files
+.env    
+.venv/
+
+
+_pycache__/
+.ipynb_checkpoints/
+.DS_Store

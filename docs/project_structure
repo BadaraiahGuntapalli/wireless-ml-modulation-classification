@@ -1,0 +1,36 @@
+wireless-ml-modulation-classification/
+├── README.md
+├── pyproject.toml        (or requirements.txt)
+├── .gitignore
+├── src/
+│   └── wmlmc/
+│       ├── __init__.py
+│       ├── config.py
+│       ├── dataset/
+│       │   ├── generate.py
+│       │   ├── io.py
+│       │   └── transforms.py
+│       ├── modulations/
+│       │   ├── bpsk.py
+│       │   ├── qpsk.py
+│       │   └── qam.py
+│       ├── impairments/
+│       │   ├── awgn.py
+│       │   ├── cfo.py
+│       │   ├── phase.py
+│       │   └── fading.py
+│       ├── models/
+│       │   ├── cnn_iq.py
+│       │   └── baseline_ml.py
+│       └── eval/
+│           ├── metrics.py
+│           └── plots.py
+├── scripts/
+│   ├── gen_dataset.py
+│   ├── train.py
+│   └── eval.py
+├── tests/
+│   ├── test_modulations.py
+│   └── test_impairments.py
+├── data/                 # generated datasets (gitignored)
+└── results/              # generated outputs (gitignored)
